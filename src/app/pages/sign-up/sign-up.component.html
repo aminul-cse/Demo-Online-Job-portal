@@ -1,0 +1,65 @@
+<section class="bg-blue-300 fixed w-full z-50" id="header">
+    <header class="container h-[70px]">
+        <nav class="flex justify-between h-full items-center">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-1 items-center">
+                    <div>
+                        <img src="../assets/images/2024-02-27 03 35 35.png" alt="" class="h-8 pl-6">
+                        <div class="text-base font-bold title-gradient">Online Job portal</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <ul
+                    class="lg:flex lg:items-center lg:justify-center px-4 py-4 lg:py-0 gap-4 cursor-pointer shadow lg:shadow-none rounded-lg">
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#home" class="text-lg font-semibold">Home</a>
+                    </li>
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#about" title="About Us" class="text-lg font-semibold">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button routerLink="/login" class="bg-black border p-[12px_25px] rounded-md text-white font-bold text-base hover:bg-green-900 transition-all ease-in-out duration-700">Login</button>
+            </div>
+        </nav>
+    </header>
+</section>
+<section class="pt-28">
+    <div class="container w-1/2 bg-white shadow-lg border">
+        <div class="text-center text-2xl font-bold mb-7 py-4">Employer Registration Form</div>
+        <div class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-400 pt-4 text-xl font-bold text-center mb-7">Account information</div>
+        
+        <div class="flex flex-col gap-4">
+            <ng-container *ngFor="let section of formSections; let i = index">
+                <div class="flex-col space-y-1">
+                    <label [for]="section.id" class="text-sm font-medium text-gray-700">{{ section.label }}</label>
+                    <input [type]="section.type" [id]="section.id"
+                        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 rounded-md sm:text-sm w-full border border-gray-300 p-2.5"
+                        [placeholder]="section.placeholder" [required]="section.required">
+
+                    <ng-container *ngIf="i === 2">
+                        <div
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-400 pt-4 text-xl font-bold text-center mb-7">
+                            Company Details Information
+                        </div>
+                    </ng-container>
+
+                    <ng-container *ngIf="i === formSections.length - 4">
+                        <div
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-400 pt-4 text-xl font-bold text-center mb-7">
+                            Contact
+                        </div>
+                    </ng-container>
+        
+                </div>
+            </ng-container>
+            <div class="pt-6 flex items-center justify-center mb-6">
+                <button routerLink="/EmployerProfile" class="w-full px-2 py-2 bg-blue-400 shadow-md border rounded-md text-white font-bold text-lg hover:bg-blue-600 transition-all ease-in-out duration-500">Create Account</button>
+            </div>
+        </div>
+    </div>
+</section>

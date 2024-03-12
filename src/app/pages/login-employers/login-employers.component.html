@@ -1,0 +1,68 @@
+<!--============================= Header ======================== -->
+<section class="bg-blue-300 fixed w-full z-50" id="header">
+    <header class="container h-[70px]">
+        <nav class="flex justify-between h-full items-center">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-1 items-center">
+                    <div>
+                        <img src="../assets/images/2024-02-27 03 35 35.png" alt="" class="h-8 pl-6">
+                        <div class="text-base font-bold title-gradient">Online Job portal</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <ul
+                    class="lg:flex lg:items-center lg:justify-center px-4 py-4 lg:py-0 gap-4 cursor-pointer shadow lg:shadow-none rounded-lg">
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#home" class="text-lg font-semibold">Home</a>
+                    </li>
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#about" title="About Us" class="text-lg font-semibold">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button routerLink="/sign-up"
+                    class="bg-black border p-[12px_25px] rounded-md text-white font-bold text-base hover:bg-green-900 transition-all ease-in-out duration-700">Create
+                    Account</button>
+            </div>
+        </nav>
+    </header>
+</section>
+<!--============================./ Header=============================== -->
+<section>
+    <div class="container pt-28">
+        <div class="flex items-center justify-center">
+            <div class="bg-white px-8 pb-8 pt-4 rounded-lg shadow-md w-full max-w-md">
+                <div class="text-center mb-6">
+                    <h1 class="text-2xl font-bold">Online Job Portal</h1>
+                </div>
+
+                <!-- Login Form -->
+                <form>
+                    <div class="mb-4">
+                        <label for="username" class="block text-sm font-medium text-gray-600">Username</label>
+                        <input type="text" id="username" name="username" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+                        <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+
+                    <button routerLink="/EmployerProfile" type="submit"
+                        class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Login</button>
+                </form>
+
+                <!-- Additional Links -->
+                <div class="mt-4 text-center">
+                    <a href="" class="text-blue-500 hover:underline">Forgot Password?</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,103 @@
+<section class="bg-blue-300 fixed w-full z-50" id="header">
+    <header class="container h-[70px]">
+        <nav class="flex justify-between h-full items-center">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-1 items-center">
+                    <div>
+                        <img src="../assets/images/2024-02-27 03 35 35.png" alt="" class="h-8 pl-6">
+                        <div class="text-base font-bold title-gradient">Online Job portal</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <ul
+                    class="lg:flex lg:items-center lg:justify-center px-4 py-4 lg:py-0 gap-4 cursor-pointer shadow lg:shadow-none rounded-lg">
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#home" class="text-lg font-semibold">Home</a>
+                    </li>
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#about" title="About Us" class="text-lg font-semibold">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        <div>
+            <button routerLink="/login"
+                class="bg-black border p-[12px_25px] rounded-md text-white font-bold text-base hover:bg-green-900 transition-all ease-in-out duration-700">Login</button>
+        </div>
+        </nav>
+    </header>
+</section>
+<section class="pt-28">
+    <div class="container w-1/2 p-8 bg-white border shadow-md rounded-md">
+        <div class="text-center text-3xl text-blue-600 font-semibold">Create Account</div>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Enter your name">
+            </div>
+        
+            <div class="mb-4">
+                <label for="gender" class="block text-gray-700 text-sm font-medium mb-2">Gender</label>
+                <div class="flex items-center">
+                    <label for="male" class="mr-3">
+                        <input type="radio" id="male" name="gender" value="male" class="mr-2 focus:ring-blue-500"> Male
+                    </label>
+                    <label for="female" class="mr-3">
+                        <input type="radio" id="female" name="gender" value="female" class="mr-2 focus:ring-blue-500"> Female
+                    </label>
+                    <label for="other" class="mr-3">
+                        <input type="radio" id="other" name="gender" value="other" class="mr-2 focus:ring-blue-500"> Other
+                    </label>
+                </div>
+            </div>
+        
+            <div class="mb-4">
+                <label for="skill" class="block text-gray-700 text-sm font-medium mb-2">Skill</label>
+                <select id="skill" name="skill"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                    <option value="">-- Select Skill --</option>
+                    <option value="programming">Programming</option>
+                    <option value="design">Design</option>
+                    <option value="writing">Writing</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Photography">Photography</option>
+                </select>
+            </div>
+        
+            <div class="mb-4">
+                <label for="mobile" class="block text-gray-700 text-sm font-medium mb-2">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Enter your mobile number">
+            </div>
+        
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email ID</label>
+                <input type="email" id="email" name="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Enter your email">
+            </div>
+        
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm font-medium mb-2">Password</label>
+                <input type="password" id="password" name="password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Enter your password">
+            </div>
+        
+            <div class="mb-4">
+                <label for="retype_password" class="block text-gray-700 text-sm font-medium mb-2">Retype Password</label>
+                <input type="password" id="retype_password" name="retype_password"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="Retype your password">
+            </div>
+        </form>
+        <div class="flex items-center justify-center pt-8">
+            <button routerLink="/employee-profile" type="Create Account" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">Create Account</button>
+        </div>
+    </div>
+</section>

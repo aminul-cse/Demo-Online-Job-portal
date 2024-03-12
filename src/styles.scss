@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-gap {
+    @apply pt-12 pb-12;
+}
+
+.sec-padding-top {
+    @apply pt-12;
+}
+
+.sec-padding-bottom {
+    @apply pb-12;
+}
+
+.title-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-blue-600 to-blue-400;
+}
+
+// =============== Service Card =================
+.service-card {
+    @apply p-6 w-full border rounded-3xl bg-white shadow;
+
+    .padding {
+        .dev-pos {
+            @apply lg:flex items-center;
+
+            .img-pos {
+                @apply mb-0 w-[100px];
+            }
+        }
+    }
+}
+
+// ===============./ Service Card =================

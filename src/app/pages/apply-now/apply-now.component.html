@@ -1,0 +1,71 @@
+<!--============================= Header ======================== -->
+<section class="bg-blue-300 fixed w-full z-50" id="header">
+    <header class="container h-[70px]">
+        <nav class="flex justify-between h-full items-center">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-1 items-center">
+                    <div>
+                        <img src="../assets/images/2024-02-27 03 35 35.png" alt="" class="h-8 pl-6">
+                        <div class="text-base font-bold title-gradient">Online Job portal</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <ul
+                    class="lg:flex lg:items-center lg:justify-center px-4 py-4 lg:py-0 gap-4 cursor-pointer shadow lg:shadow-none rounded-lg">
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#home" class="text-lg font-semibold">Home</a>
+                    </li>
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#about" title="About Us" class="text-lg font-semibold">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div routerLink="/employee-profile" class="flex items-center gap-2 border shadow-md px-2 py-2 cursor-pointer">
+                <div>
+                    <img src="../assets/images/icons/user-profile-svgrepo-com.svg" class="h-8" alt="">
+                </div>
+                <div class="font-bold text-lg">John doe</div>
+            </div>
+        </nav>
+    </header>
+</section>
+<!--============================./ Header=============================== -->
+<section class="pt-28">
+    <div class="container w-1/2 ">
+        <div class="text-center text-2xl text-blue-700 font-bold mb-8">Enter Your Short Details Here</div>
+        <div>
+            <form action="#" method="post">
+                <!-- Why do you want this job? -->
+                <div class="mb-4">
+                    <label for="why-this-job" class="text-sm text-gray-600 font-semibold">Why do you want this job?</label>
+                    <textarea id="why-this-job" name="why_this_job" rows="4"
+                        class="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"></textarea>
+                </div>
+            
+                <!-- Email Address -->
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-600">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        class="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                </div>
+            
+                <!-- Why are you leaving your previous job? -->
+                <div class="mb-4">
+                    <label for="why-leave-job" class="block text-sm font-medium text-gray-600">Why are you leaving your previous
+                        job?</label>
+                    <textarea id="why-leave-job" name="why_leave_job" rows="4"
+                        class="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"></textarea>
+                </div>
+            
+                <!-- Submit Button -->
+                <div class="flex items-center justify-center">
+                    <button type="submit" routerLink="/Submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring focus:border-blue-300">Submit
+                        Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

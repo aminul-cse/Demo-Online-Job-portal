@@ -1,0 +1,90 @@
+<!--============================= Header ======================== -->
+<section class="bg-blue-300 fixed w-full z-50" id="header">
+    <header class="container h-[70px]">
+        <nav class="flex justify-between h-full items-center">
+            <div class="flex justify-between items-center h-full">
+                <div class="flex gap-1 items-center">
+                    <div>
+                        <img src="../assets/images/2024-02-27 03 35 35.png" alt="" class="h-8 pl-6">
+                        <div class="text-base font-bold title-gradient">Online Job portal</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <ul
+                    class="lg:flex lg:items-center lg:justify-center px-4 py-4 lg:py-0 gap-4 cursor-pointer shadow lg:shadow-none rounded-lg">
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#home" class="text-lg font-semibold">Home</a>
+                    </li>
+                    <li
+                        class="px-4 py-2 hover:bg-blue-600 rounded-lg hover:text-white transition duration-300 ease-in-out">
+                        <a href="#about" title="About Us" class="text-lg font-semibold">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div routerLink="/EmployerProfile" class="flex items-center gap-2 border shadow-md px-2 py-2 cursor-pointer">
+                <div>
+                    <img src="../assets/images/icons/company-27.svg" class="h-8 bg-black" alt="">
+                </div>
+                <div class="font-bold text-lg">ABC Company</div>
+            </div>
+        </nav>
+    </header>
+</section>
+<!--============================./ Header=============================== -->
+
+<section class="pt-28">
+    <div class="container w-1/2 bg-white border shadow-lg">
+            <div class="py-6">
+                <h2 class="text-2xl font-bold mb-4 text-center">Job Posting Form</h2>
+                <!-- Company Name -->
+                <div class="mb-4">
+                    <label for="companyName" class="block text-sm font-medium text-gray-600">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+        
+                <!-- Company Description -->
+                <div class="mb-4">
+                    <label for="companyDescription" class="block text-sm font-medium text-gray-600">Company Description</label>
+                    <textarea id="companyDescription" name="companyDescription"
+                        class="mt-1 p-2 w-full border rounded-md"></textarea>
+                </div>
+        
+                <!-- Job Title -->
+                <div class="mb-4">
+                    <label for="jobTitle" class="block text-sm font-medium text-gray-600">Job Title</label>
+                    <input type="text" id="jobTitle" name="jobTitle" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+        
+                <!-- Education Requirement -->
+                <div class="mb-4">
+                    <label for="education" class="block text-sm font-medium text-gray-600">Education Requirement</label>
+                    <textarea id="education" name="education" class="mt-1 p-2 w-full border rounded-md"></textarea>
+                </div>
+        
+                <!-- Experience Requirement -->
+                <div class="mb-4">
+                    <label for="experience" class="block text-sm font-medium text-gray-600">Experience Requirement</label>
+                    <textarea id="experience" name="experience" class="mt-1 p-2 w-full border rounded-md"></textarea>
+                </div>
+        
+                <!-- Location -->
+                <div class="mb-4">
+                    <label for="location" class="block text-sm font-medium text-gray-600">Location</label>
+                    <input type="text" id="location" name="location" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+        
+                <!-- Total Pay -->
+                <div class="mb-4">
+                    <label for="totalPay" class="block text-sm font-medium text-gray-600">Total Pay</label>
+                    <input type="text" id="totalPay" name="totalPay" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+        
+                <!-- Submit Button -->
+                <div>
+                    <button routerLink="/PostSubmit" class="bg-blue-500 border p-[12px_25px] rounded-md text-white font-bold text-base hover:bg-blue-900 transition-all ease-in-out duration-700 w-full">post</button>
+                </div>
+            </div>
+        </div>
+</section>
